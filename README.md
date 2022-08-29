@@ -7,22 +7,28 @@
   </li>
     <li><a href="#structure">File Structure</a></li>
   <li><a href="#screenshots">Screenshots</a> </li>
-  <li><a href="#contributors">Contributors</a></li>
   
   
 </ul>
 <h2>What i have learnt from this project</h2>
 <ul>
 <li>
-<blockquote>
-This is My First Project using these technologies so it can't be the most optimized one and the files aren't organized in such perfect way ,we are still learning so wish me best of luck ^ ^.
-</blockquote>
+Getting familiar with ASP.net learnt its main advantages over the others. 
+</li>
+<li>
+Using the mvc architecture in angular and mc in ASP.net.
+</li>
+<li>
+Using Swagger.
+</li>
+<li>
+Using AES Encryption and learnt more about hashing algorithms.
+</li>
+<li>
+Logging all transactions using Log4Net Library.
 </li>
 </ul>
-<h2 href="#about">About</h2>
-<blockquote>
-  <p>Al-Book-Store is full-stack web-application using <a href="https://angular.io/">Angularjs</a>,<a href="https://nodejs.org/en/">Node.js</a>,<a href="https://expressjs.com/">Express.js</a>,<a href="https://www.mongodb.com/">MongoDB</a></p>
-</blockquote>
+
 <h3 href="#build">Build with</h3>
 <ul>
    <li><a href="https://angular.io/">Angular JS</a></li>
@@ -87,6 +93,30 @@ Client
 <br>
 <ol>
 Simple UI
+<img src="/ScreenShots/2.JPG">
+<img src="/ScreenShots/3.JPG">
+SWAGGER
+<img src="/ScreenShots/1.JPG">
+
+</ol>
+<h2>Important Part For further contribution from anyone just pull request^^</h2>
+<ol>
+<li>
+How could you make the password and the user data unknown for any person either the software engineers inside the company and the only user can access this data after signing up?
+<blockquote>
+for the first time in signing up the bare password will be hashed and stored in db and the user personal data will use this hashed password as an key for encryption and decryption and the hashing is used by a one way mathematical eq (will be explained in number theory course).
+</blockquote>
+</li>
+<li>Advantages of ASP.net over PHP
+<blockquote>
+For Example search for SQL injection,Security
+</blockquote>
+</li>
+<li>
+You can prevent sql injection by using parameterized queries see the project and pull request it (it's an easy task).
+</li>
+<li>Read about AES Encryption Why and when its used and what is the difference and use cases between it and RSA Encryption</li>
+<li>When updating the password  and hashed it will you first decrypt the user data with the old hashed password and encrypt them using the hashed password as if you are going to access these user data you will want the old hashed password? </li>
 
 </ol>
 
