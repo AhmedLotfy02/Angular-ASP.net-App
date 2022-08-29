@@ -63,6 +63,7 @@ Client
 │   ├── app
 |   |   ├── components
 |   |   |   ├── create
+|   |   |   ├── main menu
 |   |   |   ├── update
 |   |   |   ├── reset password
 |   |   ├── models	
