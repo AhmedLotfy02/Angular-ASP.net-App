@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head> </head>
+
+<body>
+    <div class="maincontainer">
+        <div class="welcomedcard">
+            <mat-card>
+                <p class="animate__animated animate__slideInDown">Hi</p>
+                <p class="animate__animated animate__slideInDown">
+                    Choose your desired option
+                </p>
+                <img src="https://storage.needpix.com/rsynced_images/robot-309843_1280.png" class="animate__animated animate__slideInLeft" />
+            </mat-card>
+        </div>
+        <div class="optioncard">
+            <mat-card class="animate__animated animate__slideInDown">
+                <button mat-raised-button (click)="create()">Add new User</button>
+                <button mat-raised-button (click)="update()">Retrieve</button>
+                <button mat-raised-button (click)="delete()">Reset Password</button>
+            </mat-card>
+        </div>
+    </div>
+</body>
+
+</html>
+<router-outlet></router-outlet>
+

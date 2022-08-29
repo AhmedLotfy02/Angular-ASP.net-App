@@ -1,0 +1,4 @@
+2022-08-29T05:25:15.3053066+02:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-08-29T05:25:15.3336353+02:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-08-29T05:25:15.3396950+02:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-08-29T05:25:15.3454789+02:00  [INF] Content root path: "C:\Users\smohamed\Desktop\Delivered Files\Project Codes\WebApi\WebApi" (b5d60022)

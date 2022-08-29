@@ -1,0 +1,208 @@
+<body>
+  <section class="vh-100 bg-image"
+    style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+            <div class="card" style="border-radius: 15px;">
+              <div class="card-body p-5">
+                <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+  
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                  <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <div class="form-group">
+                            <label class="form-label">First Name</label>
+                            <input
+                              type="text"
+                              formControlName="firstname"
+                              class="form-control form-control-lg"
+                              [ngClass]="{ 'is-invalid': submitted && f['firstname'].errors }"
+                            />
+                            <div *ngIf="submitted && f['firstname'].errors" class="invalid-feedback">
+                              <div *ngIf="f['firstname'].errors['required']">First name is required</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <div class="form-group">
+                            <label class="form-label">Father Name</label>
+                            <input
+                              type="text"
+                              formControlName="fathername"
+                              class="form-control form-control-lg"
+                              [ngClass]="{ 'is-invalid': submitted && f['fathername'].errors }"
+                            />
+                            <div *ngIf="submitted && f['fathername'].errors" class="invalid-feedback">
+                              <div *ngIf="f['fathername'].errors['required']">Father name is required</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="row">    
+                        <div class="col-md-6 mb-4">
+                          <div class="form-outline">
+                            <div class="form-group">
+                              <label class="form-label">Family Name</label>
+                              <input
+                                type="text"
+                                formControlName="familyname"
+                                class="form-control form-control-lg"
+                                [ngClass]="{ 'is-invalid': submitted && f['familyname'].errors }"
+                              />
+                              <div *ngIf="submitted && f['familyname'].errors" class="invalid-feedback">
+                                <div *ngIf="f['familyname'].errors['required']">Family name is required</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      
+
+
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <div class="form-group">
+                            <label class="form-label">Birth date</label>
+                            <input
+                              type="date"
+                              formControlName="birthdate"
+                              class="form-control form-control-lg"
+                              [ngClass]="{ 'is-invalid': submitted && f['birthdate'].errors }"
+                            />
+                            <div *ngIf="submitted && f['birthdate'].errors" class="invalid-feedback">
+                              <div *ngIf="f['birthdate'].errors['required']">Birth date is required</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+  
+                    <div class="row">
+                     
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <div class="form-group">
+                            <label class="form-label">Occupation</label>
+                            <input
+                              type="text"
+                              formControlName="occupation"
+                              class="form-control form-control-lg"
+                              [ngClass]="{ 'is-invalid': submitted && f['occupation'].errors }"
+                            />
+                            <div *ngIf="submitted && f['occupation'].errors" class="invalid-feedback">
+                              <div *ngIf="f['occupation'].errors['required']">Occupation is required</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <div class="form-group">
+                            <label class="form-label">Address</label>
+                            <input
+                              type="text"
+                              formControlName="address"
+                              class="form-control form-control-lg"
+                              [ngClass]="{ 'is-invalid': submitted && f['address'].errors }"
+                            />
+                            <div *ngIf="submitted && f['address'].errors" class="invalid-feedback">
+                              <div *ngIf="f['address'].errors['required']">Address is required</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+  
+  
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+      
+                        <div class="form-outline">
+
+                          <div class="form-group">
+                            <label class="form-label" for="firstName">User Name</label>
+                            <input
+                              type="text"
+                              formControlName="username"
+                              class="form-control form-control-lg"
+                              [ngClass]="{ 'is-invalid': submitted && f['username'].errors }"
+                            />
+                            <div *ngIf="submitted && f['username'].errors" class="invalid-feedback">
+                              <div *ngIf="f['username'].errors['required']">Username is required</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      
+                      <div class="col-md-6 mb-4">
+      
+                          <div class="form-outline mb-4">
+
+                            <div class="form-group">
+                              <label class="form-label" for="form3Example4cg">Password</label>
+                              <input
+                                type="text"
+                                formControlName="password"
+                                class="form-control form-control-lg"
+                                [ngClass]="{ 'is-invalid': submitted && f['password'].errors }"
+                              />
+                              <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
+                                <div *ngIf="f['password'].errors['required']">Password is required</div>
+                                <div *ngIf="f['password'].errors['minlength']">
+                                  Password must be at least 8 characters
+                                </div>
+                                <div *ngIf="f['password'].errors['pattern']">
+                                  Password must include at least 1 Capital, 1 Small and 1 digit
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                      </div>
+                    </div>
+  
+      
+ 
+                  <div class="form-group">
+                    <div class="d-flex justify-content-center">
+                      <button type="submit"
+                        class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                    </div>
+                  </div>
+
+                </form>
+                <div class="warn" *ngIf="changed">
+                  the user is added successfully  
+                  </div>
+                  <div class="warn" *ngIf="duplicate">
+                    the username is duplicated  
+                    </div>
+              </div>
+             
+            </div>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+     
+    </div>
+   
+  </section>
+  </body>
+  
+  
+  
